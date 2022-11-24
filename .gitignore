@@ -1,4 +1,4 @@
-# Logs
+# Logss
 logs
 *.log
 npm-debug.log*
@@ -90,7 +90,7 @@ dist
 
 # vuepress build output
 .vuepress/dist
-
+.vuepress/dist
 # Serverless directories
 .serverless/
 
@@ -100,5 +100,5 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
-# TernJS port file
+# TernJS port file and folder
 .tern-port
