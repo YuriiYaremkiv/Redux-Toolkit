@@ -1,7 +1,15 @@
-import {Layout} from './Layout'
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { LoginPage, DashBoardPages } from 'pages';
+import { Layout } from './Layout';
 
 export const App = () => {
   return (
-    <Layout/>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="login" element={<LoginPage />} />
+        <Route path="dashboard" element={<DashBoardPages />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
   );
 };
