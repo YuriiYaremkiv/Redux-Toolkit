@@ -1,3 +1,6 @@
+import { useDispatch } from 'react-redux';
+import { addTodo } from 'store/todoSlice';
+
 export const InputFields = ({ text, handleInput, handleSubmit }) => {
   return (
     <label>
