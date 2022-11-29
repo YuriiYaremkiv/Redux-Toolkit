@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  max-width: 400px;
+}
+
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding: 8px;
+
+  border: 1px solid red;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
