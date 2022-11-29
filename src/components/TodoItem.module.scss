@@ -1,0 +1,20 @@
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+
+  margin-bottom: 12px;
+  padding: 8px;
+
+  border: 1px solid red;
+  border-radius: 8px;
+}
+
+input:checked + span {
+  display: block;
+  text-decoration: line-through;
+}
+
+.delete {
+  cursor: pointer;
+}
